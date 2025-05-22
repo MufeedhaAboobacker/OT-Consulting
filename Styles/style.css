@@ -1,0 +1,670 @@
+
+/* font style  */
+@font-face {
+    font-family: gilroy-bold;
+    src: url(../Fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: gilroy-semibold;
+    src: url(../Fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+    font-family: gilroy-medium;
+    src: url(../Fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+    font-family: gilroy-regular;
+    src: url(../Fonts/Gilroy-Regular.ttf);
+}
+/* styles */
+body {
+  font-family: 'gilroy-medium';
+}
+
+.navbar .navbar-nav{
+  font-family: 'gilroy-bold';  
+} 
+
+.nav-link{
+  color: #003870;
+}
+
+.d-none{
+  color: #003870;
+}
+
+.banner-section {
+  background: linear-gradient(to right, #003870, #ccc), url('/Images/banner-bg.png'); 
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  position: relative;
+  color: #ffffff;
+}
+
+.banner-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/Images/Mask\ group\ \(3\).png') no-repeat center center / cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.banner-section > * {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-section h1 {
+ font-family: 'gilroy-bold';
+}
+
+p{
+  font-family: 'gilroy-medium';  
+}
+
+.btn{
+  color: white;
+  font-family: 'gilroy-semibold';
+  background-color: #ff9400;
+  border-radius: 3px;
+}
+
+.custom-slider-arrows {
+  position: absolute;
+  bottom: 40px; /* Adjust as needed */
+  right: 60px;  /* Align to the right side of banner */
+  display: flex;
+  gap: 10px;
+  z-index: 3;
+}
+
+.slider-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.slider-btn:hover {
+  transform: scale(1.05);
+}
+
+.slider-btn.prev {
+  background-color: #f0f3f7; /* Light background like in Figma */
+  color: #4a5a78; /* Arrow color */
+}
+
+.slider-btn.next {
+  background-color: #f89b01; /* Bright orange */
+  color: white; /* White arrow */
+}
+
+.welcome-section h2 {
+  color: #003870;
+  font-size: 2rem;
+  font-family: 'gilroy-bold';
+}
+
+.welcome-section p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.card h5 {
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card{
+  border-radius: 0;
+}
+
+.text{
+  color: #ff9400;
+  text-decoration: none;
+}
+
+.vr-line {
+  width: 3px;
+  height: 100%;
+  background-color: #ff9400;
+  min-height: 192px;
+}
+
+.lead{
+  color: #7888A9;
+}
+
+.card .btn-sm{
+  text-decoration: none;
+  color: #ff9400;
+  font-size: smaller;
+  font-family: 'gilroy-semibold';
+}
+
+.healthcare .btn-sm{
+  text-decoration: none;
+  color: #ff9400;
+  font-size: smaller;
+  font-family: 'gilroy-semibold';
+}
+
+.healthcare-img{
+  width: 507px;
+}
+
+.card:hover .card-img-overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.small{
+  font-size: 12px;
+}
+
+.row{
+  gap: 0;
+}
+
+.services-section .text-center{
+  color: #003870;
+  font-family: 'gilroy-bold';
+}
+
+.row>* {
+  padding: 0;
+  border-radius: 0;
+}
+
+.connectivity {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Gilroy-Regular', sans-serif;
+  color: #003870;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+}
+
+.col {
+  flex: 1;
+}
+
+.left {
+  min-width: 300px;
+}
+
+.right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.connect-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.btn-sm {
+  color: #ff9400;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  background-color: #fff;
+}
+
+.accordion-title {
+  background-color: #7888A9;
+  padding: 12px 16px;
+  color: #fff;
+  font-family: 'gilroy-semibold';
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-title .icon {
+  font-size: 16px;
+  margin-left: 10px;
+  color: #003870;
+}
+
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+.cta-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff9400;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.connectivity .row{
+  gap: 10px;
+}
+
+.connectivity .h2{
+  font-family: 'gilroy-bold';
+}
+
+
+.expert-contact-section {
+  font-family: 'gilroy-medium';
+  color: #1c1c1c;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.col {
+  flex: 1;
+  position: relative;
+}
+
+.col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-col .text-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: white;
+}
+
+.left-col .text-overlay h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.left-col .text-overlay a {
+  color: #FF9400;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.right-col {
+  color: #fff;
+  background-image: url('/Images/expert2.png');
+}
+
+.right-col img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.right-col .text-overlay {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  max-width: 600px;
+}
+
+.right-col h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.right-col p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+
+.right-col {
+  position: relative;
+  overflow: hidden;
+}
+
+.right-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.text-overlay.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-overlay.bottom h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.text-overlay.bottom p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.text-overlay.bottom .btn {
+  background-color: #FF9400;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn-orange {
+  background-color: #FF9400;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    flex: 1 0 100%;
+    min-height: 300px;
+  }
+
+  .left-col .text-overlay,
+  .right-col .text-overlay {
+    padding: 20px;
+  }
+}
+
+.carousel-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+    
+.your-carousel {
+  height: 700px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+
+.your-carousel .slick-track,
+.your-carousel .slick-slide {
+  height: 100% ;
+  display: flex;
+  align-items: stretch; 
+  margin: 0 8px;
+}
+
+.carousel-card {
+  height: 100% ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  width: 20%;
+  background-color: #fff;
+  border-radius: 0px;
+}
+
+.your-carousel .slick-slide {
+  margin: 0 8px;
+}
+    
+.carousel-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+.carousel-card h4{
+  font-family: 'gilroy-semibold';
+  color: #003870;
+}
+
+.carousel-card-content {
+  padding: 20px;
+}
+    
+.carousel-card p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: 'gilroy-medium';
+  color: #7888A9;
+}
+
+.contact-us-section {
+  background-color: #fff;
+  background-image: url('/Images/Mask\ group\ \(3\).png');
+}
+
+.contact-title {
+  font-weight: 700;
+  color: #002c77;
+}
+
+.form-intro {
+  font-size: 15px;
+  color: #222;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.custom-input {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.custom-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 165, 0, 0.3);
+}
+
+.btn-orange {
+  background-color: #FF9400;
+  color: #fff;
+  font-family: 'gilroy-medium';
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #e69500;
+}
+
+.footer {
+  background-color: #003c78;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .row .col {
+    margin-bottom: 1rem;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .footer div {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.welcome-section .vr-line {
+  width: 2px;
+  height: 100px;
+  background-color: #000;
+}
+
+@media (max-width: 768px) {
+  .welcome-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .welcome-section p.lead {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .welcome-section a.text {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .welcome-section .vr-line {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-section {
+    padding: 2rem 1rem;
+  }
+
+  .welcome-section h2 {
+    font-size: 1.25rem;
+  }
+
+  .welcome-section p.lead {
+    font-size: 0.95rem;
+  }
+}
+
+.section-title {
+  font-family: 'gilroy-bold', sans-serif;
+  font-size: 35px;
+  color: #003870;
+}
+
+.subheading {
+  font-family: 'gilroy-semibold', sans-serif;
+  font-size: 25px;
+  color: #003870;
+}
+
+.divider-line {
+  height: 7px;
+  width: 60%;
+  background-color: #ff9400;
+}
+
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .subheading {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .healthcare-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .divider-line {
+    width: 100%;
+    height: 5px;
+    margin: 1rem 0;
+  }
+
+  .healthcare p,
+  .healthcare a {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 22px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
