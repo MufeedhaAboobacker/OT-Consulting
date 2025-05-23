@@ -29,6 +29,7 @@ body {
   color: #003870;
 }
 
+
 .d-none{
   color: #003870;
 }
@@ -91,7 +92,7 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
   transition: transform 0.2s;
 }
 
@@ -284,7 +285,7 @@ p{
 }
 
 .connectivity .row{
-  gap: 10px;
+  gap: 30px;
 }
 
 .connectivity .h2{
@@ -424,6 +425,7 @@ p{
 }
     
 .your-carousel {
+  background-image: url("/Images/mask2.png");
   height: 700px;
   overflow: hidden;
   padding: 10px;
@@ -445,7 +447,7 @@ p{
   justify-content: space-between;
   flex: 0 0 auto;
   width: 20%;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 0px;
 }
 
@@ -476,9 +478,7 @@ p{
 }
 
 .contact-us-section {
-  background-color: #fff;
- 
-   background-image: url('/Images/Mask group (3).png');
+  background-image: url('/Images/mask2.png');
   background-size: 1000px 600px;
   background-repeat: no-repeat;
   background-position: left;
@@ -552,8 +552,8 @@ p{
 }
 
 .divider-line {
-  height: 7px;
-  width: 60%;
+  height: 3px;
+  width: 100px;
   background-color: #ff9400;
 }
 
